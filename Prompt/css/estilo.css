@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0!important;
+}
+
+body{
+    background: #201b2c;
+}
+
+.img-1{
+    width: 65px;
+}
+
+.logo{
+    float: left;
+    padding: 4px;
+    width: 70%;
+}
+
+.menu-principal{
+    background-color: #514869;
+    height: 60px;
+}
+
+main, .content{
+    margin: 0 auto; /*0 auto para cetralizar o header e deixar a logo e as midas no meio*/
+    width: 980px;
+    position: relative;
+}
+
+.midia{
+    width: 25%;
+    float: right;
+    padding: 16px;
+}
+
+.midia img{
+    width: 25px;
+}
+
+.midia ul li{
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.header-2{
+    padding: 20px;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.menu-url{
+    height: 76px;
+    border-bottom: 3px solid #f0ffffde;
+}
+
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.menu ul li{
+    font-family: 'Noto Sans TC', sans-serif;
+    display: inline-block;
+    color: #f0ffffde;
+    margin-left: 15px;
+    height: 47px;
+    cursor: pointer;
+}
+
+.menu ul li:hover{
+    border-bottom: 2px solid #77ffc0;
+}
+
+.menu ul li a:hover{    /*hover para mudar a cor quando passa o mouse*/
+    color: #77ffc0;
+}
+
+.menu ul li a{
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase; /*Deixa todas as Letras maiusculas, tem outros comandos para deixar so a primeira letra minuscula ou todas minusculas*/
+}
+
+.menu{
+    width: 70%;
+    float: left;
+    margin-top: 10px;
+}
+
+.busca{
+    width: 30%;
+    float: right;
+}
+
+.busca input{
+    background-image: url(img/search.png);
+    background-size: 22px;
+    background-position: 94%;
+    background-repeat: no-repeat;
+    height: 34px;
+    padding-left: 12px;
+    width: 175px;
+    border: 1px solid #d6d6d6;
+}
+
+button.slick-prev{
+    font-size: 0px;
+    border: none;
+    width: 55px;
+    height: 51px;
+    background-color: transparent;
+    transform: rotateY(180deg);
+    background-image: url(/img/arrow.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 9;
+    top: 38%;
+    left:  4%;
+}
+
+button.slick-next{
+    font-size: 0px;
+    border: none;
+    width: 55px;
+    height: 51px;
+    background-color: transparent;
+    background-image: url(/img/arrow.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 9;
+    top: 38%;
+    right: 4%;
+}
+
+.slick-dots li button{
+    font-size: 0px;
+    border: 3px solid #fff;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots{
+    margin: 0 auto; 
+    width: 50%;
+    float: left;
+    position: relative;
+    left: 46%;
+    position: absolute;
+    top: 90%;
+}
+
+li.slick-active button{
+    background-color: #00bac6;
+}
+
+.slick-dots li{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.slick-list{
+    width: 100%!important;
+}
+
+.texto-destaque{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.texto-destaque strong{
+    color: #646464;
+}
+
+.texto-destaque h1{
+    color: #818181;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texto-destaque p{
+    color: #9a9a9a;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+}
+
+.col-3{
+    width: 29%;
+    float: left;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-3 img{
+    width: 120px;
+}
+
+.bloco-texto{
+    margin-top: 3em;
+}
+
+.col-3 h3{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.col-3 p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-weight: normal!important;
+}
+
+.bloco-imagens-texto{
+    width: 100%;
+    background-color: #eeee;
+    display: inline-block;
+    padding-bottom: 25px;
+    
+}
+
+.bloco-imagem img{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bloco-imagem{
+    border: 1px solid #c5c5c5;
+    height: 330px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+}
+
+.bloco-imagem b, p{
+    padding: 5px;
+    text-align: center;
+}
+
+.bloco-imagem b{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.bloco-imagem p{
+    font-size: 14px;
+}
+
+.bloco-texto{
+    margin-top: 3em;
+}
+
+.bloco-imagem{
+    background-color: #eeee;
+}
+
+.col-4{
+    text-align: center;
+    float: left;
+    width: 33%;
+    padding-bottom: 30px;
+}
+
+.col-4 img{
+    margin: 0 auto ;
+    width: 95px;
+    padding-top: 1em;
+}
+
+.col-4 img:hover{
+    margin-top: 8px!important;
+    position: relative!important;
+    padding: 0;
+}
+
+.footer{
+    background: #514869;
+    z-index: 1;
+}
+
+.footer-2{
+    background-color: #514869;
+    color: black;
+    height: 90px;
+}
+
+.footer-2 p{
+    margin-top: 25px;
+}
+
+.footer-2 a{
+    color: black;
+}
+
+.footer p{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer h3{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 4px;
+    text-align: left;
+    color: white;
+}
+
+.col-5{
+    padding-top: 20px;
+    float: left;
+    width: 25%;
+    padding-bottom: 30px;
+}
+
+.clock{
+    color: #898989;
+}
+
+.clock::before{
+    padding: 0 5px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-size: 15px;
+    background-image: url(/img/clock.png);
+    background-repeat: no-repeat;
+}
+
+.linha{
+    cursor: default;
+}
+
+.pin::before, .mail::before, .fone::before{
+    padding: 0 5px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.pin::before{
+    background-image: url(/img/pin.png);
+}
+
+.mail::before{
+    background-image: url(/img/mail.png);
+}
+
+.fone::before{
+    background-image: url(/img/phone.png);
+}

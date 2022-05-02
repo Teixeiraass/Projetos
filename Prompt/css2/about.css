@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0!important;
+}
+
+                    /*HEADER */
+
+.img-1{
+    width: 65px;
+}
+
+.logo{
+    float: left;
+    padding: 4px;
+    width: 70%;
+}
+
+.menu-principal{
+    background-color: #FFF5DE;
+    height: 60px;
+}
+
+main, .content{
+    margin: 0 auto; /*0 auto para cetralizar o header e deixar a logo e as midas no meio*/
+    width: 980px;
+    position: relative;
+}
+
+.midia{
+    width: 25%;
+    float: right;
+    padding: 16px;
+}
+
+.midia img{
+    width: 25px;
+}
+
+.midia ul li{
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.header-2{
+    padding: 20px;
+    background-color: #fff;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.menu-url{
+    height: 76px;
+    border-bottom: 3px solid #efefef;
+}
+
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.menu ul li{
+    font-family: 'Noto Sans TC', sans-serif;
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 15px;
+    height: 47px;
+    cursor: pointer;
+}
+
+.menu ul li:hover{
+    border-bottom: 2px solid #00bac6;
+}
+
+.menu ul li a:hover{    /*hover para mudar a cor quando passa o mouse*/
+    color: #00bac6;
+}
+
+.menu ul li a{
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase; /*Deixa todas as Letras maiusculas, tem outros comandos para deixar so a primeira letra minuscula ou todas minusculas*/
+}
+
+.menu{
+    width: 70%;
+    float: left;
+    margin-top: 10px;
+}
+
+.busca{
+    width: 30%;
+    float: right;
+}
+
+.busca input{
+    background-image: url(img/search.png);
+    background-size: 22px;
+    background-position: 94%;
+    background-repeat: no-repeat;
+    height: 34px;
+    padding-left: 12px;
+    width: 175px;
+    border: 1px solid #d6d6d6;
+}
+
+
+        /*CONTENT*/
+main, .content{
+    margin: 0 auto; /*0 auto para cetralizar o header e deixar a logo e as midas no meio*/
+    width: 980px;
+    position: relative;
+}
+
+
+        /*BANNER*/
+
+.col-1{
+    z-index: 1;
+}
+
+.col-1 img{
+    float: left;
+    width: 100%;
+    z-index: 2;
+}
+
+.texto-destaque{
+    top: 15%;
+    text-align: center;
+    padding: 0px;
+    z-index: 3;
+    color: white;
+    float: left;
+    margin-left: 25%;
+    position: absolute;
+    font-size: 20px;
+}
+
+.texto-destaque h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texto-destaque p{
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    width: 350px;
+    margin-left: 180px;
+}
+
+
+                    /*CONTAINER 2*/
+
+.col-2{
+    margin: 0 auto;
+}
+
+.img img{
+    width: 600px;
+    padding: 20px;
+}
+
+.img{
+    width: 40,5%;
+    float: right;
+}
+
+.texto{
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding: 15px;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+
+.texto h3{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texto p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+                    /*Final*/
+
+
+.col-3{
+    border-top:2px solid black;
+}
+
+.col-3 img{
+    width: 200px;
+    margin-left: 43%;
+}
+
+.col-3 h3{
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.col-3 p{
+    width: 600px;
+    text-align: left;
+    margin-left: 30%;
+    padding-bottom: 15px;
+
+}
+
+                    /*FOOTER CINZA*/
+
+.footer{
+    background-image: url(/img/fundo_cinza.jpg);
+    z-index: 1;
+}
+
+.footer p{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: white;
+    width: 230px;
+}
+
+.footer h3{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 0;
+    text-align: left;
+    color: white;
+}
+
+.col-5{
+    padding-top: 30px;
+    float: left;
+    width: 25%;
+    padding-bottom: 30px;
+}
+
+.clock{
+    color: #898989;
+    padding: 10px 0;
+}
+
+.clock::before{
+    padding: 0 5px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-size: 15px;
+    background-image: url(/img/clock.png);
+    background-repeat: no-repeat;
+}
+
+.linha{
+    cursor: default;
+    margin-bottom: 10px;
+}
+
+.pin::before, .mail::before, .fone::before{
+    padding: 0 5px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.pin::before{
+    background-image: url(/img/pin.png);
+}
+
+.mail::before{
+    background-image: url(/img/mail.png);
+}
+
+.fone::before{
+    background-image: url(/img/phone.png);
+}
+
+
+.footer-2{
+    background-color: #FFF5DE;
+    color: black;
+    height: 90px;
+}
+
+.footer-2 p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer-2 a{
+    color: black;
+}
