@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calc</title>
+</head>
+<body>
+    <div class="imgFundo">
+        <div class="calc">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>    <!--(tr) cria uma linhas-->
+                    <td><button onclick="clean()">C</button></td> <!--(td) cria colunas nessas linhas-->
+                    <td><button onclick="back()"><</button></td>
+                    <td><button onclick="insert('/')">/</button></td>
+                    <td><button onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('7')">7</button></td>   <!--(Onclick) adiciona um evento quando clica no botao, esse evento esta linkado com a função no js atraves da tag (insert)-->
+                    <td><button onclick="insert('8')">8</button></td>
+                    <td><button onclick="insert('9')">9</button></td>
+                    <td><button onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('4')">4</button></td>
+                    <td><button onclick="insert('5')">5</button></td>
+                    <td><button onclick="insert('6')">6</button></td>
+                    <td><button onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('1')">1</button></td>
+                    <td><button onclick="insert('2')">2</button></td>
+                    <td><button onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button style="height: 83px;" onclick="calcular()">=</button></td> <!--(rowspan) espande para duas linhas-->
+                </tr>
+                <tr>
+                    <td colspan="2"><button style="width: 102px;" onclick="insert('0')">0</button></td> <!--(colspan) espande para duas colunas-->
+                    <td><button onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

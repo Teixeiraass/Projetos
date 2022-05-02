@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.imgFundo{
+    background-image: linear-gradient(45deg, black, yellow);    /*(background-image: linear-gradient) serve para criar um fundo degrade. Na estrutura com parenteses vc indica quantos graus de vc quer o degrade e em seguida indica as duas cores que deseja*/ 
+    height: 100vh;  /*(vh) pode ser usado quando vc quer que as cores de fundo cubram a pagina inteira*/
+    color: white;
+}
+
+.calc{
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*(top: 50%; left: 50%; transform: translate(-50%, -50%); ) exemplo de como centralizar um objeto*/
+    border-radius: 10px;
+    padding: 15px;
+}
+
+button{
+    width: 50px;
+    height: 40px;
+    margin: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover{   /*(hover) muda o efeito quando passa o mouse por cima*/
+    background-color: gray;
+}
+
+#resultado{
+    margin: 4px;
+    background-color: white;
+    width: 205px;
+    height: 25px;
+    text-align: right;
+    font-size: 20px;
+    padding: 5px;
+    color: black;
+}
