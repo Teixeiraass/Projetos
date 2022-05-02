@@ -1,0 +1,133 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;    /*Animação para o scroll descer devagar quando clicar em um botao, que mande para um texto ou img na msm pagina*/
+}
+
+body{
+  min-height: 100vh; /*coloquei o tamanho minimo do body para o tamanho da tela, para nao ficar repetindo a img*/ 
+  overflow-x: hidden;
+  background: linear-gradient(#2b1055, #7597de);
+}
+
+header{
+  padding: 30px 100px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header .logo{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+header ul li a:hover, 
+header ul li a.active{
+  background: #fff;
+  color: #2b1055;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section::before{ /*deixar parte de baixo da section transparente com o conteudo*/
+  content: ""; /*Esse content que faz a magica para ficar transparente*/
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 100000;
+}
+
+section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;  /*Ajusta imagem para tamanho da tela*/
+  pointer-events: none; /*deixou a img de fundo e pude mexer nos botoes que aparecem sem interferencia*/
+}
+
+section #moon{
+  mix-blend-mode: screen; /*essa tag mescla as duas img ou duas tags. Ou seja ela faz as duas img ficarem juntas, e não uma sobrepondo a outra*/ 
+}
+section #mountains_front{
+  z-index: 10;
+}
+
+#text{
+  right: -350px;
+  position: absolute;
+  font-weight: 700px;
+  color: #fff;
+  font-size: 7.5vw;
+  white-space: nowrap;
+  z-index: 9;
+}
+
+#btn{
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 8px 30px;
+  background-color: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px); /*Ajusta a posição do item, de acordo com x e y, ou seja y muda se vai pra cima ou baixo e x pra direita ou pra esquerda. veja que no site o bnt vai para baixo do moon light, pois coloquei tranforme y 100 ou seja ele foi 100px para baixo*/
+}
+
+.sec{
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+  z-index: 10;
+}
+
+.sec h2{
+  color: #fff;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.sec p{
+  font-size: 1em;
+  color: #fff;
+}
